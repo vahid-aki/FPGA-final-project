@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_S00_AXI.vhd" \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0.vhd" \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_myip_0_0/sim/myip_v1_0_bfm_1_myip_0_0.vhd" \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/sim/myip_v1_0_bfm_1.vhd" \
+"../../../../IP2.srcs/sources_1/imports/hdl/myip_v1_0_bfm_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 27 16:28:51 2020
+# Process ID: 460
+# Current directory: D:/University/TERM_7/FPGA/project/cordic/Cordic/Cordic.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/University/TERM_7/FPGA/project/cordic/Cordic/Cordic.sim/sim_1/behav/xsim/xsim.dir/cordic_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/University/TERM_7/FPGA/project/cordic/Cordic/Cordic.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/University/TERM_7/FPGA/project/cordic/Cordic/Cordic.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/University/TERM_7/FPGA/project/cordic/Cordic/Cordic.sim/sim_1/behav/xsim/xsim.dir/cordic_tb_behav/webtalk/xsim_webtalk.tcl -notrace

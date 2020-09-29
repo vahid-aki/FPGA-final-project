@@ -1,0 +1,823 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jan 28 03:23:36 2020
+# Process ID: 10460
+# Current directory: d:/University/TERM_7/FPGA/project/IP/ip_repo/edit_myip_v1_0.runs/synth_1
+# Command line: vivado.exe -log myip_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myip_v1_0.tcl
+# Log file: d:/University/TERM_7/FPGA/project/IP/ip_repo/edit_myip_v1_0.runs/synth_1/myip_v1_0.vds
+# Journal file: d:/University/TERM_7/FPGA/project/IP/ip_repo/edit_myip_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source myip_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/University/soft/vivado/Vivado/2019.1/data/ip'.
+Command: synth_design -top myip_v1_0 -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4196 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 579.199 ; gain = 189.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'myip_v1_0_S00_AXI' declared at 'd:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:5' bound to instance 'myip_v1_0_S00_AXI_inst' of component 'myip_v1_0_S00_AXI' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0_S00_AXI' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:240]
+INFO: [Synth 8-226] default block is never used [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:370]
+	Parameter N bound to: 17 - type: integer 
+	Parameter iteration_num bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'sin_cos' declared at 'd:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:36' bound to instance 'cordic' of component 'sin_cos' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'sin_cos' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:53]
+	Parameter N bound to: 17 - type: integer 
+	Parameter iteration_num bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Cordic' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:49]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:133]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:134]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:137]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:138]
+WARNING: [Synth 8-614] signal 'y_temp' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+WARNING: [Synth 8-614] signal 'x_temp' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+WARNING: [Synth 8-614] signal 'z_temp' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+WARNING: [Synth 8-614] signal 'mag_x3' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+WARNING: [Synth 8-614] signal 'mag_y3' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+WARNING: [Synth 8-614] signal 'mag_z3' is read in the process but is not in the sensitivity list [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'Cordic' (1#1) [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'sin_cos' (2#1) [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:53]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0_S00_AXI' (3#1) [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0' (4#1) [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0.vhd:49]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design myip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 642.789 ; gain = 252.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 642.789 ; gain = 252.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 642.789 ; gain = 252.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:215]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Cordic'
+WARNING: [Synth 8-327] inferring latch for variable 'x_out_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:153]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                     op1 |                               01 |                               01
+                     op2 |                               10 |                               10
+                  done_s |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'Cordic'
+WARNING: [Synth 8-327] inferring latch for variable 'y_out_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:184]
+WARNING: [Synth 8-327] inferring latch for variable 'z_out_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:217]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:314]
+WARNING: [Synth 8-327] inferring latch for variable 'y_temp_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 'x_temp_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'sigma_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:125]
+WARNING: [Synth 8-327] inferring latch for variable 'mag_x3_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:152]
+WARNING: [Synth 8-327] inferring latch for variable 'mag_y3_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:185]
+WARNING: [Synth 8-327] inferring latch for variable 'z_temp_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:142]
+WARNING: [Synth 8-327] inferring latch for variable 'mag_z3_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/Cordic.vhd:216]
+WARNING: [Synth 8-327] inferring latch for variable 'z0_reg' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:75]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 653.000 ; gain = 263.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |Cordic                 |          17|      4302|
+|2     |sin_cos__GC0           |           1|       130|
+|3     |myip_v1_0_S00_AXI__GC0 |           1|       708|
++------+-----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 68    
+	   2 Input     31 Bit       Adders := 17    
+	   3 Input     19 Bit       Adders := 68    
+	   2 Input     19 Bit       Adders := 51    
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               20 Bit    Registers := 51    
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   4 Input     20 Bit        Muxes := 51    
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 459   
+	   4 Input     19 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 153   
+	   2 Input      1 Bit        Muxes := 805   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Cordic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 4     
+	   2 Input     19 Bit       Adders := 3     
++---Registers : 
+	               20 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 27    
+	   4 Input     19 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 47    
+Module sin_cos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module myip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP sin_temp, operation Mode is: C+A*(B:0x6dc4).
+DSP Report: operator sin_temp is absorbed into DSP sin_temp.
+DSP Report: operator sin_temp is absorbed into DSP sin_temp.
+DSP Report: Generating DSP cos_temp, operation Mode is: C+A*(B:0x6dc4).
+DSP Report: operator cos_temp is absorbed into DSP cos_temp.
+DSP Report: operator cos_temp is absorbed into DSP cos_temp.
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design myip_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'Cordic:/z_temp_reg[17]' (LD) to 'Cordic:/z_temp_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Cordic:/\z_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Cordic:/done_reg)
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module Cordic.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[18]) is unused and will be removed from module Cordic.
+INFO: [Synth 8-3886] merging instance 'cordici_0/z0_reg[0]' (LD) to 'cordici_0/z0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cordici_0/z0_reg[1]' (LD) to 'cordici_0/z0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\z0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_insti_1/axi_rresp_reg[0]' (FDRE) to 'myip_v1_0_S00_AXI_insti_1/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_insti_1/axi_bresp_reg[0]' (FDRE) to 'myip_v1_0_S00_AXI_insti_1/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/z2_reg_reg[0]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/z2_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/z2_reg_reg[1]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/z2_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/z2_reg_reg[2]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[0]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[1]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[2]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[3]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[4]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[5]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[6]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[7]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[8]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[9]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[10]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[11]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[12]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[13]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[14]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[15]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[16]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[17]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[18]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[0]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[1]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[2]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[3]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[4]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[5]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[6]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[7]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[8]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[9]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[10]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[11]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[12]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[13]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[14]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[15]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[16]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[18]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x2_reg_reg[19]' (FDCE) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y2_reg_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\y2_reg_reg[19] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[0]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[1]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[2]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[3]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[4]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[5]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[6]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[7]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[8]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[9]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[10]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[11]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[12]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[13]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[14]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[15]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[16]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/x_temp_reg[18]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[0]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[1]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[2]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[3]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[4]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[4]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[5]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[5]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[6]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[7]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[8]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[8]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[9]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[9]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[10]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[10]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[11]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[11]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[12]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[13]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[14]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[15]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[16]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[17]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/y_temp_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\y_temp_reg[18] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/y_out_reg[19]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/x_out_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\x_out_reg[19] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[1]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[2]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[3]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[4]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[5]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[5]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[6]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[6]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[7]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[8]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[8]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[9]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[9]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[10]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[11]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[12]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[13]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[14]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[15]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_y3_reg[16]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_x3_reg[1]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_x3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_x3_reg[2]' (LD) to 'myip_v1_0_S00_AXI_inst/cordic/c0/mag_x3_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic.
+WARNING: [Synth 8-3332] Sequential element (x_out_reg[19]) is unused and will be removed from module Cordic.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__5.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__7.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__8.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__9.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__10.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__11.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__12.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__13.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[14].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__14.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[15].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__15.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[16].c /\y_temp_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[19]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[18]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[17]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[16]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[15]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[14]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[13]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[12]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[11]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[10]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[9]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[8]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[7]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[6]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[5]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[4]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[3]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[2]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[1]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[0]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[16]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[15]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[14]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[13]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[12]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[11]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[10]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[9]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[8]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[7]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[6]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[5]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[4]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[3]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[2]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[1]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (z_temp_reg[0]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[18]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[17]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[16]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[15]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[14]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[13]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[12]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[11]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[10]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[9]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[8]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[7]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[6]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[5]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[4]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[3]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[2]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[1]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[0]) is unused and will be removed from module Cordic__16.
+WARNING: [Synth 8-3332] Sequential element (y_temp_reg[18]) is unused and will be removed from module Cordic__16.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\x_out_reg[19] )
+WARNING: [Synth 8-3332] Sequential element (x_out_reg[19]) is unused and will be removed from module Cordic__1.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[18]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[17]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[16]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[15]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[14]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[13]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[12]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[11]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[10]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[9]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[8]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[7]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[6]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[5]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[4]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[3]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[2]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[1]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (z_out_reg[0]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[18]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[17]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[16]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[15]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[14]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[13]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[12]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[11]) is unused and will be removed from module Cordic__15.
+WARNING: [Synth 8-3332] Sequential element (mag_z3_reg[10]) is unused and will be removed from module Cordic__15.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[2].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[2].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[3].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[3].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\z_temp_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\mag_x3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\x_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\y_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\z_temp_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[2].c /\y_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[2].c /\z_temp_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[2].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[3].c /\y_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[3].c /\z_temp_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[3].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[4].c /\z_temp_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[4].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[4].c /\y_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\z_temp_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\y_temp_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[6].c /\z_temp_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[6].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[6].c /\y_temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\z_temp_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\y_temp_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\z_temp_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\y_temp_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\z_temp_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\y_temp_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\z_temp_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\y_temp_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\z_temp_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\y_temp_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\z_temp_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\y_temp_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\z_temp_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\y_temp_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[14].c /\z_temp_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[14].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[14].c /\y_temp_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[15].c /\z_temp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[15].c /\z_temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[15].c /\y_temp_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[16].c /\y_temp_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\mag_z3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/c0 /\z_out_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 906.684 ; gain = 516.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|Cordic      | look_up_table[0] | 32x17         | LUT            | 
+|Cordic      | look_up_table[0] | 32x17         | LUT            | 
++------------+------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sin_cos     | C+A*(B:0x6dc4) | 19     | 15     | 36     | -      | 37     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|sin_cos     | C+A*(B:0x6dc4) | 19     | 15     | 36     | -      | 37     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |Cordic                 |           1|       265|
+|2     |sin_cos__GC0           |           1|        88|
+|3     |myip_v1_0_S00_AXI__GC0 |           1|       450|
+|4     |Cordic__1              |           1|       628|
+|5     |Cordic__2              |           1|      1010|
+|6     |Cordic__3              |           1|       993|
+|7     |Cordic__4              |           1|       991|
+|8     |Cordic__5              |           1|       966|
+|9     |Cordic__6              |           1|       946|
+|10    |Cordic__7              |           1|       920|
+|11    |Cordic__8              |           1|       911|
+|12    |Cordic__9              |           1|       895|
+|13    |Cordic__10             |           1|       873|
+|14    |Cordic__11             |           1|       857|
+|15    |Cordic__12             |           1|       847|
+|16    |Cordic__13             |           1|       831|
+|17    |Cordic__14             |           1|       810|
+|18    |Cordic__15             |           1|       625|
+|19    |Cordic__16             |           1|       575|
++------+-----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\x2_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[1].c /\y_temp_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[4].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[4].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[5].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[6].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[6].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[7].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[8].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[9].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[10].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[11].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[12].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\y2_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[13].c /\x_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myip_v1_0_S00_AXI_inst/cordic/x[14].c /\y2_reg_reg[19] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 913.102 ; gain = 523.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |Cordic                 |           1|       265|
+|2     |sin_cos__GC0           |           1|        88|
+|3     |myip_v1_0_S00_AXI__GC0 |           1|       444|
+|4     |Cordic__1              |           1|       543|
+|5     |Cordic__2              |           1|      1010|
+|6     |Cordic__3              |           1|       993|
+|7     |Cordic__4              |           1|       970|
+|8     |Cordic__5              |           1|       945|
+|9     |Cordic__6              |           1|       925|
+|10    |Cordic__7              |           1|       899|
+|11    |Cordic__8              |           1|       890|
+|12    |Cordic__9              |           1|       874|
+|13    |Cordic__10             |           1|       852|
+|14    |Cordic__11             |           1|       836|
+|15    |Cordic__12             |           1|       826|
+|16    |Cordic__13             |           1|       810|
+|17    |Cordic__14             |           1|       779|
+|18    |Cordic__15             |           1|       604|
+|19    |Cordic__16             |           1|       535|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 913.102 ; gain = 523.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[15] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[15]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[15] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[36]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[14] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[14]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[14] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[35]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[13] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[13]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[13] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[34]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[12] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[12]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[12] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[33]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[11] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[11]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[11] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[32]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[10] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[10]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[10] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[31]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[9] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[9]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[9] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[30]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[8] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[8]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[8] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[29]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[7] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[7]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[7] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[28]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[6] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[6]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[6] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[27]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[5] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[5]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[5] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[26]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[4] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[4]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[4] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[25]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[3] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[3]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[3] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[24]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[2] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[2]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[2] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[23]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[1] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[1]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[1] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[22]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[0] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg1_reg[0]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:234]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg1[0] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/sin_temp/P[21]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:100]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[15] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[15]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[15] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[36]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[14] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[14]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[14] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[35]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[13] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[13]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[13] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[34]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[12] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[12]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[12] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[33]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[11] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[11]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[11] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[32]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[10] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[10]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[10] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[31]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[9] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[9]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[9] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[30]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[8] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[8]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[8] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[29]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[7] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[7]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[7] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[28]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[6] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[6]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[6] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[27]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[5] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[5]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[5] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[26]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[4] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[4]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[4] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[25]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[3] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[3]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[3] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[24]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[2] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[2]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[2] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[23]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[1] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[1]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[1] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[22]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[0] with 1st driver pin 'myip_v1_0_S00_AXI_inst/slv_reg2_reg[0]/Q' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/hdl/myip_v1_0_S00_AXI.vhd:235]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin myip_v1_0_S00_AXI_inst/slv_reg2[0] with 2nd driver pin 'myip_v1_0_S00_AXI_inst/cordic/cos_temp/P[21]' [d:/University/TERM_7/FPGA/project/IP/ip_repo/myip_1.0/src/sin_cos.vhd:101]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |    12|
+|2     |CARRY4  |   687|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |   954|
+|5     |LUT2    |  1963|
+|6     |LUT3    |   512|
+|7     |LUT4    |   585|
+|8     |LUT5    |   323|
+|9     |LUT6    |    38|
+|10    |FDCE    |   925|
+|11    |FDRE    |   164|
+|12    |FDSE    |     3|
+|13    |LD      |  2143|
+|14    |IBUF    |    47|
+|15    |OBUF    |    41|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |  8399|
+|2     |  myip_v1_0_S00_AXI_inst |myip_v1_0_S00_AXI |  8299|
+|3     |    cordic               |sin_cos           |  8079|
+|4     |      c0                 |Cordic            |   161|
+|5     |      \x[10].c           |Cordic_0          |   506|
+|6     |      \x[11].c           |Cordic_1          |   500|
+|7     |      \x[12].c           |Cordic_2          |   494|
+|8     |      \x[13].c           |Cordic_3          |   488|
+|9     |      \x[14].c           |Cordic_4          |   477|
+|10    |      \x[15].c           |Cordic_5          |   370|
+|11    |      \x[16].c           |Cordic_6          |   325|
+|12    |      \x[1].c            |Cordic_7          |   412|
+|13    |      \x[2].c            |Cordic_8          |   558|
+|14    |      \x[3].c            |Cordic_9          |   556|
+|15    |      \x[4].c            |Cordic_10         |   547|
+|16    |      \x[5].c            |Cordic_11         |   543|
+|17    |      \x[6].c            |Cordic_12         |   530|
+|18    |      \x[7].c            |Cordic_13         |   524|
+|19    |      \x[8].c            |Cordic_14         |   518|
+|20    |      \x[9].c            |Cordic_15         |   512|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 913.188 ; gain = 523.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 213 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 913.188 ; gain = 523.383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 913.188 ; gain = 523.383
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2832 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 16 inverter(s) to 304 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 998.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2143 instances were transformed.
+  LD => LDCE: 1839 instances
+  LD => LDCE (inverted pins: G): 304 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+236 Infos, 132 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 998.852 ; gain = 617.930
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 998.852 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'd:/University/TERM_7/FPGA/project/IP/ip_repo/edit_myip_v1_0.runs/synth_1/myip_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file myip_v1_0_utilization_synth.rpt -pb myip_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 28 03:24:19 2020...

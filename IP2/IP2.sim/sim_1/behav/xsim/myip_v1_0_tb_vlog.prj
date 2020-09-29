@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../IP2.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" --include "../../../../IP2.srcs/sim_1/imports/myip_v1_0_bfm_1" --include "D:/University/soft/vivado/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_master_0_0/sim/myip_v1_0_bfm_1_master_0_0_pkg.sv" \
+"../../../../IP2.ip_user_files/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_master_0_0/sim/myip_v1_0_bfm_1_master_0_0.sv" \
+"../../../../IP2.srcs/sim_1/imports/bfm_design/myip_v1_0_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

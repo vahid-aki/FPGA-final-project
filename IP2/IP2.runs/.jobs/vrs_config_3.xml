@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/University/TERM_7/FPGA/project/IP/IP2/IP2.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

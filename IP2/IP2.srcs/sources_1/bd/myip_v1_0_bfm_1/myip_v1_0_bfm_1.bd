@@ -1,0 +1,133 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x63E481DEBC64AFFF",
+      "device": "xc7k325tffg900-2",
+      "name": "myip_v1_0_bfm_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "myip_0": "",
+      "master_0": ""
+    },
+    "ports": {
+      "ACLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ARESETN"
+          },
+          "CLK_DOMAIN": {
+            "value": "myip_v1_0_bfm_1_ACLK"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "ARESETN": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      }
+    },
+    "components": {
+      "myip_0": {
+        "vlnv": "xilinx.com:user:myip:1.0",
+        "xci_name": "myip_v1_0_bfm_1_myip_0_0"
+      },
+      "master_0": {
+        "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "xci_name": "myip_v1_0_bfm_1_master_0_0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "32"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "INTERFACE_MODE": {
+            "value": "MASTER"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "master_0_M_AXI": {
+        "interface_ports": [
+          "master_0/M_AXI",
+          "myip_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "aclk_net": {
+        "ports": [
+          "ACLK",
+          "master_0/aclk",
+          "myip_0/s00_axi_aclk"
+        ]
+      },
+      "aresetn_net": {
+        "ports": [
+          "ARESETN",
+          "master_0/aresetn",
+          "myip_0/s00_axi_aresetn"
+        ]
+      }
+    },
+    "addressing": {
+      "/master_0": {
+        "address_spaces": {
+          "Master_AXI": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_myip_0_S00_AXI_reg": {
+                "address_block": "/myip_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
+                "range": "64K"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
